@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap');
+
+
+/* Начальная настройка HTML */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Добавление перменных CSS */
+:root {
+    --mainColor: #29335c;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #1890ff;
+    --textColor: #eee;
+}
+
+/* Настройка лого и элементов в меню */
+header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    justify-content: space-between;
+}
+
+/* Настройка самого меню (цвет, отступы, декорации) */
+nav a {
+    margin: 0 2rem;
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+}
+
+nav .partner {
+    font-weight: bold;
+}
+
+header div, nav {
+    display: flex;
+    align-items: center;
+}
+
+.btnSignIn {
+}
+
