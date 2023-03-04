@@ -9,7 +9,6 @@ function App() {
       <React.Fragment>
           <Navbar />
           <Partners />
-
       </React.Fragment>
     </div>
   );

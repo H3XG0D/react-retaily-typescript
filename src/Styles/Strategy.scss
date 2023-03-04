@@ -6,17 +6,26 @@
     font-family: "Jost", sans-serif;
     font-weight: 400;
     justify-content: center;
-    width: 980px;
+    width: 950px;
   }
 
   &__first_content {
-    font-size: 200px;
-    justify-content: center;
-    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-size: 155px;
+    font-weight: 500;
+    color: rgba(12, 151, 249, 0.1);
+    letter-spacing: 7px;
+
+    position: absolute;
+    top: 170px;
+    left: 510px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 4;
   }
 
   &__second_content {
-    z-index: 4;
+    z-index: 5;
     font-size: 24px;
     text-align: left;
     line-height: 40px;
