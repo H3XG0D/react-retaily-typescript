@@ -1,54 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap');
 
+$color-active: #0C97F9;
+$white: #FFFFFF;
+$black: #000;
 
 /* Начальная настройка HTML */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
 }
 
 /* Добавление перменных CSS */
 :root {
-    --mainColor: #29335c;
-    --mainColorLight: #5767aa;
-    --secondaryColor: #1890ff;
-    --textColor: #eee;
+  --mainColor: #29335c;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #1890ff;
+  --textColor: #eee;
 }
 
 /* Настройка лого и элементов в меню */
-header {
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 80px;
+  padding: 0 5rem;
+  background-color: $white;
+  color: $black;
+
+  &-logo {
+    width: 133px;
+    height: 30px;
+    background: url("./../Images/logo.png") no-repeat;
+    background-size: cover;
+  }
+
+  &-links {
+    a {
+      color: $black;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover{
+        color: var(--secondaryColor);
+      }
+    }
     display: flex;
+    gap: 20px;
     align-items: center;
-    height: 80px;
-    padding: 0 2rem;
-    background-color: var(--mainColor);
-    color: var(--textColor);
-    justify-content: space-between;
-}
+  }
 
-/* Настройка самого меню (цвет, отступы, декорации) */
-nav a {
-    margin: 0 2rem;
-    color: var(--textColor);
-    text-decoration: none;
-    font-size: 17px;
-}
+  &-link__active {
+    font-weight: 600;
+  }
 
-nav a:hover {
-    color: var(--secondaryColor);
-}
-
-nav .partner {
-    font-weight: bold;
-}
-
-header div, nav {
+  &-switcher {
     display: flex;
+    gap: 10px;
     align-items: center;
+    border-radius: 20px;
+    background-color: $color-active;
+    padding: 4px;
+    height: 43px;
+    user-select: none;
+    color: $white;
+    &-item__active {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 7px;
+      color: #000;
+    }
+    &-item {
+      cursor: pointer;
+    }
+  }
 }
-
-.btnSignIn {
-}
-

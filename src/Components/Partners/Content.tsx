@@ -1,5 +1,5 @@
 import React from 'react';
-import './../Styles/Content.scss'
+import '../../Styles/Content.scss'
 
 const Content = () => {
     const title = "СОКРАЙЩАЙТЕ СВОИ ОПЕРАЦИОННЫЕ РАСХОДЫ И УВЕЛИЧИВАЙТЕ ПРИБЫЛЬ ВМЕСТЕ С RETAILY"
@@ -14,7 +14,7 @@ const Content = () => {
                     <div className="main-content__subtitle">Автоматизируем прием заказов от торговых точек</div>
                 </div>
                 <div className="main-content__btn">
-                    <img src="" alt=""/>
+                    <img src="src/Components" alt=""/>
                 </div>
             </div>
         </div>
