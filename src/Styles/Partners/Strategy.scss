@@ -15,12 +15,14 @@
     font-weight: 500;
     color: rgba(12, 151, 249, 0.1);
     letter-spacing: 7px;
+    user-select: none;
 
     position: absolute;
     top: 170px;
     left: 510px;
     right: 0px;
     bottom: 0px;
+
     z-index: 4;
   }
 

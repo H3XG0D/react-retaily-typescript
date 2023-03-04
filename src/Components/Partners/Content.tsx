@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Content.scss'
+import '../../Styles/Partners/Content.scss'
 
 const Content = () => {
     const title = "СОКРАЙЩАЙТЕ СВОИ ОПЕРАЦИОННЫЕ РАСХОДЫ И УВЕЛИЧИВАЙТЕ ПРИБЫЛЬ ВМЕСТЕ С RETAILY"

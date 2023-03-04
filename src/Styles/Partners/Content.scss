@@ -20,7 +20,7 @@
   }
 
   &__wall {
-    background: url("./../Images/background.png") no-repeat;
+    background: url("../../Images/background.png") no-repeat;
     top: 0;
     bottom: 0;
     left: 0;
@@ -55,7 +55,7 @@
     &__btn {
       width: 120px;
       height: 120px;
-      background: url("./../Images/play.png") no-repeat;
+      background: url("../../Images/play.png") no-repeat;
       background-size: cover;
     }
   }

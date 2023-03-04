@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap');
+
+.main__retake {
+  font-family: "Jost", sans-serif;
+  width: 100vw;
+  background-color: #FAFAFA;
+  height: calc(100vh - 80px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_hide_retake {
+    font-size: 250px;
+    font-weight: 500;
+    color: rgba(12, 151, 249, 0.1);
+    letter-spacing: 7px;
+    user-select: none;
+  }
+  &_text {
+    top: 230px;
+    bottom: 0;
+    left: 485px;
+    right: 0;
+    position: absolute;
+    background: url("../../Images/text.png") no-repeat;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 370px;
+  }
+  &_macbook {
+    position: absolute;
+    top: 300px;
+    bottom: 0;
+    left: 980px;
+    right: 0;
+
+    background: url("../../Images/macbook.png") no-repeat;
+    background-size: cover;
+
+    width: auto;
+    height: auto;
+    max-width: 415px;
+    max-height: 250px;
+  }
+  &_iphone {
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    left: 1180px;
+    right: 0;
+
+    background: url("../../Images/iphone.png") no-repeat;
+    background-size: cover;
+
+    width: auto;
+    height: auto;
+    max-width: 225px;
+    max-height: 455px;
+  }
+}

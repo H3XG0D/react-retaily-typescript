@@ -1,0 +1,34 @@
+.main__feedback {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: #FAFAFA;
+  justify-content: center;
+  align-items: center;
+
+  &_title {
+    position: absolute;
+    font-size: 53px;
+    font-weight: 500;
+    width: 254px;
+    left: 480px;
+    bottom: 410px;
+  }
+
+  input {
+    width: 450px;
+    font-size: 18px;
+    height: 10px;
+    padding: 34px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #FAFAFA;
+  }
+
+  &_input {
+    margin-bottom: 200px;
+    margin-left: 400px;
+  }
+}

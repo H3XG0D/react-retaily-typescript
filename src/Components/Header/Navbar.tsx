@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../../Styles/Navbar.scss';
+import '../../Styles/Header/Navbar.scss';
 import {Button} from "antd";
 
 export default function Navbar() {

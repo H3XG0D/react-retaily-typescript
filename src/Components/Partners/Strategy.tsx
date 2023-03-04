@@ -1,5 +1,5 @@
 import React from 'react';
-import './../../Styles/Strategy.scss';
+import '../../Styles/Partners/Strategy.scss';
 
 const Strategy = () => {
     return (

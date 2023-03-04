@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap');
+
+$color: rgba(0, 0, 0, 0.5);
+$color2: #0C97F9;
+
+.main__analytics {
+  display: flex;
+  font-family: "Jost", sans-serif;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  &_title {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 200px;
+    position: absolute;
+  }
+  &_subtitle_item1 {
+    color: $color;
+    margin-top: 200px;
+    font-size: 25px;
+  }
+  &_subtitle_item2 {
+    color: $color;
+    margin-top: 200px;
+    font-size: 25px;
+  }
+  &_subtitle_item3 {
+    color: $color;
+    margin-top: 200px;
+    font-size: 25px;
+  }
+  &_number_item1{
+    color: $color2;
+    font-weight: 500;
+    font-size: 60px;
+  }
+  &_number_item2{
+    color: $color2;
+    font-weight: 500;
+    font-size: 60px;
+  }
+  &_number_item3{
+    color: $color2;
+    font-weight: 500;
+    font-size: 60px;
+  }
+}

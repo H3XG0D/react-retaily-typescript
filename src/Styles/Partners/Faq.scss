@@ -1,0 +1,100 @@
+$subtitle: rgba(0, 0, 0, 0.5);
+
+.main__faq {
+  display: flex;
+  font-family: 'Jost', sans-serif;
+  width: 100vw;
+  height: calc(100vh - 80px);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  &_name {
+    font-weight: 500;
+    font-size: 38px;
+    margin-bottom: 700px;
+  }
+  &_firstTitle {
+    position: absolute;
+    width: 400px;
+    font-weight: 400;
+    font-size: 26px;
+
+    left: 500px;
+    bottom: 530px;
+  }
+  &_firstSubtitle {
+    font-size: 20px;
+    width: 430px;
+    font-weight: 400;
+    margin-top: 13px;
+    color: $subtitle;
+  }
+  &_secondTitle {
+    position: absolute;
+    width: 400px;
+    font-weight: 400;
+    font-size: 26px;
+
+    left: 500px;
+    top: 430px;
+  }
+  &_secondSubtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 13px;
+    width: 450px;
+    color: $subtitle;
+  }
+  &_thirdTitle{
+    position: absolute;
+    width: 400px;
+    font-weight: 400;
+    font-size: 26px;
+
+    left: 1050px;
+    bottom: 465px;
+  }
+  &_thirdSubtitle {
+    font-size: 20px;
+    width: 430px;
+    font-weight: 400;
+    margin-top: 13px;
+    color: $subtitle;
+  }
+  &_fourthTitle {
+    position: absolute;
+    width: 350px;
+    font-weight: 400;
+    font-size: 26px;
+
+    left: 1050px;
+    top: 430px;
+  }
+  &_fourthSubtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 13px;
+    width: 380px;
+    color: $subtitle;
+  }
+
+  &_firstLine {
+    position: absolute;
+    background: url("../../Images/line.png") no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 290px;
+    left: 425px;
+    bottom: 410px;
+  }
+
+  &_secondLine {
+    position: absolute;
+    background: url("../../Images/line.png") no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 290px;
+    right: 890px;
+    bottom: 410px;
+  }
+}
