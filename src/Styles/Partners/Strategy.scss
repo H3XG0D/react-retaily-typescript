@@ -33,8 +33,10 @@
 
   &__second_content {
     z-index: 5;
-    font-size: 24px;
+    font-size: 27px;
     text-align: left;
     line-height: 40px;
+    width: 800px;
+    display: flex;
   }
 }

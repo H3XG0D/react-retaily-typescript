@@ -1,5 +1,6 @@
 .main__feedback {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: relative;
   width: calc(100vw - 20px);
   height: calc(100vh - 80px);
@@ -8,12 +9,13 @@
   align-items: center;
 
   &_title {
-    position: absolute;
+    position: relative;
+    right: -500px;
+    top: -50px;
+    display: flex;
     font-size: 53px;
     font-weight: 500;
     width: 254px;
-    left: 480px;
-    bottom: 410px;
   }
 
   input {
@@ -28,15 +30,25 @@
   }
 
   &_input {
-    margin-bottom: 200px;
-    margin-left: 400px;
+    display: flex;
+    position: relative;
+    left: -250px;
+    top: -50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &-checkbox {
     display: flex;
     gap: 10px;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 25px;
+
+    &_text {
+      font-size: 18px;
+    }
+
     &_check {
       display: flex;
       justify-content: center;
@@ -47,6 +59,7 @@
       border: 1px solid #0C97F9;
       user-select: none;
       cursor: pointer;
+
       &__active {
         width: 10px;
         height: 10px;

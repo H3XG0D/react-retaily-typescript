@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Montserrat:wght@300;400&family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap');
+$subtitle: #85cbfc;
+
+.main__footer {
+  color: white;
+  position: relative;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+
+  &-bg {
+    background-color: #0c97f9;
+  }
+
+  &-links {
+    padding: 100px;
+  }
+
+  &_logo {
+    width: 180px;
+    height: 40px;
+    background: url("../../Images/footerLogo.png") no-repeat;
+    background-size: cover;
+  }
+
+  &-items {
+    display: flex;
+    gap: 280px;
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        color: gray;
+      }
+    }
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &-title {
+        color: white;
+        font-size: 17px;
+      }
+
+      &-subtitle {
+        color: white;
+        font-size: 21px;
+      }
+    }
+  }
+
+  &-apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  &-app {
+    display: flex;
+    &-googlePlay {
+      &_image {
+        width: 60px;
+        height: 68px;
+        background: url("../../Images/googlePlay.png") no-repeat;
+        background-size: cover;
+      }
+
+      &_qrCode {
+        width: 160px;
+        height: 160px;
+        background: url("../../Images/qrCode.png") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &-applePlay {
+      &_image {
+        width: 60px;
+        height: 73px;
+        background: url("../../Images/applePlay.png") no-repeat;
+        background-size: cover;
+      }
+
+      &_qrCode {
+        width: 170px;
+        height: 170px;
+        background: url("../../Images/qrCode.png") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &-play {
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      font-size: 24px;
+      letter-spacing: 1px;
+      &_font {
+        font-weight: 600;
+      }
+    }
+  }
+}

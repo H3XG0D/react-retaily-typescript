@@ -6,7 +6,7 @@ import Analytics from "./Analytics";
 import Supplier from "./Supplier";
 import Faq from "./Faq";
 import Feedback from "./Feedback";
-import Footer from "./Footer";
+import Footer from "../Footer/Footer";
 
 const Partners = () => {
     return (
