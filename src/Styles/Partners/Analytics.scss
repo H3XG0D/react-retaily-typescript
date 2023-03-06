@@ -6,44 +6,30 @@ $color2: #0C97F9;
 .main__analytics {
   display: flex;
   font-family: "Jost", sans-serif;
-  width: 100vw;
   height: calc(100vh - 80px);
   position: relative;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 60px;
   &_title {
     font-weight: 500;
     font-size: 35px;
-    margin-bottom: 200px;
-    position: absolute;
+    text-align: center;
   }
-  &_subtitle_item1 {
+  &-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+  }
+  &_subtitle_item {
     color: $color;
-    margin-top: 200px;
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  &_subtitle_item2 {
-    color: $color;
-    margin-top: 200px;
-    font-size: 25px;
-  }
-  &_subtitle_item3 {
-    color: $color;
-    margin-top: 200px;
-    font-size: 25px;
-  }
-  &_number_item1{
-    color: $color2;
-    font-weight: 500;
-    font-size: 60px;
-  }
-  &_number_item2{
-    color: $color2;
-    font-weight: 500;
-    font-size: 60px;
-  }
-  &_number_item3{
+  &_number_item{
     color: $color2;
     font-weight: 500;
     font-size: 60px;

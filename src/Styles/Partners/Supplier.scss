@@ -3,113 +3,132 @@ $transparent: rgba(12, 151, 249, 0.1);
 .main__supplier {
   display: flex;
   position: relative;
-  width: 100vw;
   height: 70vw;
-  background-color: #FAFAFA;
   font-family: "Jost", sans-serif;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 60px;
+
+  &-bg {
+    background-color: #fafafa;
+  }
+  // Работа с названием
 
   &_title {
+    margin-top: 100px;
     font-weight: 500;
     font-size: 32px;
-    margin-bottom: 1100px;
-    justify-content: center;
   }
 
-  &_num_one {
-    font-family: "Jost", sans-serif;
-    font-size: 350px;
-    font-weight: 500;
-    color: $transparent;
-    user-select: none;
+  &-step {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 110px;
+    &-leftSide {
+      display: flex;
+      flex-direction: column;
+      gap: 240px;
+      margin-top: 100px;
+    }
+    &-rightSide {
+      display: flex;
+      flex-direction: column;
+      gap: 240px;
+      margin-top: 300px;
+    }
+    &-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      &_hide {
+        position: relative;
+        left: -15px;
+        font-family: "Jost", sans-serif;
+        font-size: 350px;
+        font-weight: 500;
+        color: $transparent;
+        user-select: none;
+        line-height: 100px;
+      }
+      &_text {
+        position: relative;
+        font-size: 23px;
+        width: 300px;
+        text-align: center;
+      }
+      &_btn {
+        position: relative;
+      }
+      &_text1 {
+        position: relative;
+        font-size: 23px;
+        width: 300px;
 
-    position: absolute;
-    top: 110px;
-    left: 600px;
-    right: 0;
-    bottom: 0;
-  }
+        top: -60px;
+      }
+      &_btn1 {
+        position: relative;
+        top: -60px;
+        right: 40px;
+      }
+    }
+    &-bar {
+      position: relative;
 
-  &_num_two {
-    font-family: "Jost", sans-serif;
-    font-size: 350px;
-    font-weight: 500;
-    color: $transparent;
-    user-select: none;
+      &-line {
+        position: absolute;
+        width: 1px;
 
-    position: absolute;
-    top: 310px;
-    left: 1055px;
-    right: 0;
-    bottom: 0;
-  }
+        top: 0;
+        left: 8px;
+        right: 0;
+        bottom: 0;
 
-  &_num_three {
-    font-family: "Jost", sans-serif;
-    font-size: 350px;
-    font-weight: 500;
-    color: $transparent;
-    user-select: none;
+        z-index: 1;
+        border: 1px solid #0c97f9;
+      }
+      &-items {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+      }
 
-    position: absolute;
-    top: 530px;
-    left: 600px;
-    right: 0;
-    bottom: 0;
-  }
-
-  &_num_four {
-    font-family: "Jost", sans-serif;
-    font-size: 350px;
-    font-weight: 500;
-    color: $transparent;
-    user-select: none;
-
-    position: absolute;
-    top: 710px;
-    left: 1055px;
-    right: 0;
-    bottom: 0;
-  }
-
-  &_progressBar {
-    position: absolute;
-    background: url("../../Images/progress.png") no-repeat;
-    background-size: cover;
-    width: 2%;
-    height: 66%;
-    // 56x1300
-  }
-
-  &_document {
-    position: absolute;
-    margin-right: 512px;
-    font-size: 23px;
-    margin-bottom: 450px;
-  }
-
-  &_api {
-    position: absolute;
-    font-size: 23px;
-    width: 300px;
-    margin-left: 470px;
-    margin-bottom: 150px;
-  }
-
-  &_test {
-    position: absolute;
-    font-size: 23px;
-    width: 350px;
-    margin-right: 370px;
-    margin-top: 410px;
-  }
-
-  &_user {
-    position: absolute;
-    font-size: 23px;
-    width: 350px;
-    margin-left: 510px;
-    margin-top: 770px;
+      &-item {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid #0c97f9;
+        background-color: white;
+        &_circle {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #0c97f9;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &__active {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            left: -10px;
+            bottom: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #0c97f9;
+          }
+        }
+      }
+    }
   }
 }

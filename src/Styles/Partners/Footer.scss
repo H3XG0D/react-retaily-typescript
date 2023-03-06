@@ -3,7 +3,7 @@ $subtitle: #85CBFC;
 .main__footer {
   display: flex;
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 20px);
   height: calc(100vh - 80px);
   background-color: #0C97F9;
   justify-content: center;

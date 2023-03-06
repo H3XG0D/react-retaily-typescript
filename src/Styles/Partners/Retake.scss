@@ -2,61 +2,109 @@
 
 .main__retake {
   font-family: "Jost", sans-serif;
-  width: 100vw;
-  background-color: #FAFAFA;
+
   height: calc(100vh - 80px);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &_bg {
+    background-color: #FAFAFA;
+  }
+
   &_hide_retake {
+    text-align: center;
     font-size: 250px;
     font-weight: 500;
     color: rgba(12, 151, 249, 0.1);
     letter-spacing: 7px;
     user-select: none;
   }
-  &_text {
-    top: 230px;
-    bottom: 0;
-    left: 485px;
-    right: 0;
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
     position: absolute;
-    background: url("../../Images/text.png") no-repeat;
-    background-size: cover;
-    width: auto;
-    height: auto;
-    max-width: 450px;
-    max-height: 370px;
-  }
-  &_macbook {
-    position: absolute;
-    top: 300px;
-    bottom: 0;
-    left: 980px;
+    top: 0;
     right: 0;
-
-    background: url("../../Images/macbook.png") no-repeat;
-    background-size: cover;
-
-    width: auto;
-    height: auto;
-    max-width: 415px;
-    max-height: 250px;
-  }
-  &_iphone {
-    position: absolute;
-    top: 200px;
+    left: 0;
     bottom: 0;
-    left: 1180px;
-    right: 0;
+    align-items: center;
 
-    background: url("../../Images/iphone.png") no-repeat;
-    background-size: cover;
+    &-items {
+      display: grid;
+      justify-content: center;
+      gap: 10px;
+    }
 
-    width: auto;
-    height: auto;
-    max-width: 225px;
-    max-height: 455px;
+    &-item {
+      display: flex;
+      gap: 15px;
+
+      &-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid #0C97F9;
+        position: relative;
+        top: 3px;
+
+        &_circleIn {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #0C97F9;
+        }
+      }
+
+      &_text {
+        font-size: 17px;
+        width: 400px;
+      }
+    }
+
+    &-image {
+      position: relative;
+      display: grid;
+      height: 100%;
+      width: 100%;
+
+
+      &_macbook {
+        position: absolute;
+        background: url("../../Images/macbook.png") no-repeat;
+        background-size: cover;
+        width: auto;
+        height: auto;
+        max-width: 415px;
+        max-height: 250px;
+        top: 31vh;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      &_iphone {
+        position: absolute;
+        top: 20vh;
+        bottom: 0;
+        left: 240px;
+        right: 0;
+
+        background: url("../../Images/iphone.png") no-repeat;
+        background-size: cover;
+
+        width: auto;
+        height: auto;
+        max-width: 225px;
+        max-height: 455px;
+      }
+    }
   }
 }

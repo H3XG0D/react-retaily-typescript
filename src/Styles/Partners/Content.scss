@@ -1,7 +1,6 @@
 .main {
-  width: 100vw;
   height: calc(100vh - 80px);
-  position: relative;
+  //position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +12,7 @@
     right: 0;
     z-index: 2;
     position: absolute;
-    width: 100vw;
+    width: calc(100vw - 20px);
     height: calc(100vh - 80px);
     background-color: black;
     opacity: 0.9;

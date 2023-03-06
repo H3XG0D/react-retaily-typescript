@@ -6,15 +6,17 @@ const Content = () => {
 
     return (
         <div className="main">
-            <div className="main-bg"></div>
-            <div className="main__wall"></div>
-            <div className="main-content">
-                <div className="main-content-title">
-                    <div className="main-content__title">{title}</div>
-                    <div className="main-content__subtitle">Автоматизируем прием заказов от торговых точек</div>
-                </div>
-                <div className="main-content__btn">
-                    <img src="src/Components" alt=""/>
+            <div className="wrapper">
+                <div className="main-bg"></div>
+                <div className="main__wall"></div>
+                <div className="main-content">
+                    <div className="main-content-title">
+                        <div className="main-content__title">{title}</div>
+                        <div className="main-content__subtitle">Автоматизируем прием заказов от торговых точек</div>
+                    </div>
+                    <div className="main-content__btn">
+                        <img src="src/Components" alt=""/>
+                    </div>
                 </div>
             </div>
         </div>
