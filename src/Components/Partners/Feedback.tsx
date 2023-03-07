@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./../../Styles/Partners/Feedback.scss";
 import { Button } from "antd";
-import { Checkbox } from "antd";
 import type { CheckboxChangeEvent } from "antd/es/checkbox";
 
 type PropsType = {
@@ -16,6 +15,7 @@ const Feedback = (props: PropsType) => {
     company: "",
     link: "",
   });
+  // eslint-disable-next-line
   const onChange = (e: CheckboxChangeEvent) => {
     console.log(`checked = ${e.target.checked}`);
   };

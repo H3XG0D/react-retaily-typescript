@@ -1,20 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../Styles/Header/Navbar.scss";
 import { Button } from "antd";
-import {BrowserRouter, Routes, Router, NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-type PropsType= {
+type PropsType = {
   slider: boolean;
   switcher: () => void;
-}
+};
 export default function Navbar(props: PropsType) {
   return (
     <div className="wrapper">
       <header className="header">
         {/* ЛОГО Retaily */}
         <NavLink to="/" className="header-link">
-          <div className="header-logo">
-          </div>
+          <div className="header-logo"></div>
         </NavLink>
         <div className="header-switcher">
           <div
@@ -38,18 +37,18 @@ export default function Navbar(props: PropsType) {
         </div>
         {/* Меню */}
         <div className="header-links">
-          <a href="/#" className="header-link__active">
-            Стать партнером
-          </a>
-          <NavLink to="/one" className="header-link">
+          <NavLink to="/" className="header-link__active">
+            Стать партнёром
+          </NavLink>
+          <NavLink to="/AboutUs" className="header-link">
             О нас
           </NavLink>
-          <a href="/#" className="header-link">
+          <NavLink to="/Vacancies" className="header-link">
             Вакансии
-          </a>
-          <a href="/#" className="header-link">
+          </NavLink>
+          <NavLink to="/Contacts" className="header-link">
             Контакты
-          </a>
+          </NavLink>
         </div>
         <div>
           {/* Отдельный компонент кнопки войти */}
@@ -64,4 +63,4 @@ export default function Navbar(props: PropsType) {
       </header>
     </div>
   );
-};
+}

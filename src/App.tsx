@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Header/Navbar";
 import Partners from "./Components/Partners/Partners";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Vacancies from "./Components/Vacancies/Vacancies";
+import Contacts from "./Components/Contacts/Contacts";
 
 function App() {
   const [slider, setSlider] = useState<boolean>(false);
@@ -12,18 +14,19 @@ function App() {
   };
 
   return (
-      <BrowserRouter>
-        <div className="App">
-          <React.Fragment>
-            <Navbar slider={slider} switcher={switcher} />
-          </React.Fragment>
-        </div>
-        <Routes>
-          <Route path='one' element={<AboutUs />} />
-          <Route path="" element={<Partners slider={slider} />} />
-        </Routes>
-      </BrowserRouter>
-
+    <BrowserRouter>
+      <div className="App">
+        <React.Fragment>
+          <Navbar slider={slider} switcher={switcher} />
+        </React.Fragment>
+      </div>
+      <Routes>
+        <Route path="AboutUs" element={<AboutUs />} />
+        <Route path="Vacancies" element={<Vacancies />} />
+        <Route path="Contacts" element={<Contacts />} />
+        <Route path="" element={<Partners slider={slider} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

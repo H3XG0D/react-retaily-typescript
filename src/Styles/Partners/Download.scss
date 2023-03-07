@@ -33,7 +33,7 @@
         position: relative;
         width: 60px;
         height: 68px;
-        background: url("../../Images/googlePlay.png") no-repeat;
+        background: url("../../Images/Partners/googlePlay.png") no-repeat;
         background-size: cover;
       }
 
@@ -41,7 +41,7 @@
         position: relative;
         width: 160px;
         height: 160px;
-        background: url("../../Images/qrCode.png") no-repeat;
+        background: url("../../Images/Partners/qrCode.png") no-repeat;
         background-size: cover;
       }
     }
@@ -51,14 +51,14 @@
         position: relative;
         width: 60px;
         height: 73px;
-        background: url("../../Images/appleLogo.png") no-repeat;
+        background: url("../../Images/Partners/appleLogo.png") no-repeat;
         background-size: cover;
       }
 
       &_qrCode {
         width: 170px;
         height: 170px;
-        background: url("../../Images/qrCode.png") no-repeat;
+        background: url("../../Images/Partners/qrCode.png") no-repeat;
         background-size: cover;
       }
     }
@@ -79,7 +79,7 @@
     height: 100%;
     &_macbook {
       position: absolute;
-      background: url("../../Images/IMAC.png") no-repeat;
+      background: url("../../Images/Partners/IMAC.png") no-repeat;
       background-size: cover;
       width: auto;
       height: auto;
@@ -97,7 +97,7 @@
       left: 15vw;
       right: 0;
 
-      background: url("../../Images/iphoneMarket.png") no-repeat;
+      background: url("../../Images/Partners/iphoneMarket.png") no-repeat;
       background-size: cover;
 
       width: auto;

@@ -1,0 +1,111 @@
+$info: #AFAFB4;
+
+.main__about {
+  position: relative;
+  font-family: 'Jost', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-bg {
+    background-color: #FAFAFA;
+  }
+
+  &-company {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  &-retailyImage {
+    background: url("../../Images/About/company.png") no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+  }
+
+  &-text {
+    &_items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &_title {
+      font-size: 21px;
+    }
+    &_content {
+      font-size: 18px;
+      width: 1150px;
+    }
+  }
+
+  &-team {
+    display: flex;
+    padding: 50px;
+    gap: 30px;
+  }
+
+  &-teamImage {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    text-align: center;
+  }
+
+  &-image {
+    display: grid;
+    gap: 3px;
+    &_title {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    &_info {
+      color: $info;
+    }
+
+    &__image {
+      background: url("../../Images/About/Team/1.png") no-repeat;
+      background-size: cover;
+      width: 160px;
+      height: 217px;
+    }
+    &__image2 {
+      background: url("../../Images/About/Team/2.png") no-repeat;
+      background-size: cover;
+      width: 160px;
+      height: 217px;
+    }
+    &__image3 {
+      background: url("../../Images/About/Team/3.png") no-repeat;
+      background-size: cover;
+      width: 160px;
+      height: 217px;
+    }
+    &__image4 {
+      background: url("../../Images/About/Team/4.png") no-repeat;
+      background-size: cover;
+      width: 160px;
+      height: 217px;
+    }
+    &__image5 {
+      background: url("../../Images/About/Team/5.png") no-repeat;
+      background-size: cover;
+      width: 160px;
+      height: 217px;
+    }
+    &__image6 {
+      background: url("../../Images/About/Team/6.png") no-repeat;
+      background-size: cover;
+      width: 160px;
+      height: 217px;
+    }
+  }
+}

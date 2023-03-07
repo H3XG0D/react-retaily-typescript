@@ -17,7 +17,7 @@ $subtitle: #85cbfc;
   &_logo {
     width: 180px;
     height: 40px;
-    background: url("../../Images/footerLogo.png") no-repeat;
+    background: url("../../Images/Partners/footerLogo.png") no-repeat;
     background-size: cover;
     position: relative;
     top: -20px;
@@ -67,14 +67,14 @@ $subtitle: #85cbfc;
       &_image {
         width: 60px;
         height: 68px;
-        background: url("../../Images/googlePlay.png") no-repeat;
+        background: url("../../Images/Partners/googlePlay.png") no-repeat;
         background-size: cover;
       }
 
       &_qrCode {
         width: 160px;
         height: 160px;
-        background: url("../../Images/qrCode.png") no-repeat;
+        background: url("../../Images/Partners/qrCode.png") no-repeat;
         background-size: cover;
       }
     }
@@ -83,14 +83,14 @@ $subtitle: #85cbfc;
       &_image {
         width: 60px;
         height: 73px;
-        background: url("../../Images/applePlay.png") no-repeat;
+        background: url("../../Images/Partners/applePlay.png") no-repeat;
         background-size: cover;
       }
 
       &_qrCode {
         width: 170px;
         height: 170px;
-        background: url("../../Images/qrCode.png") no-repeat;
+        background: url("../../Images/Partners/qrCode.png") no-repeat;
         background-size: cover;
       }
     }

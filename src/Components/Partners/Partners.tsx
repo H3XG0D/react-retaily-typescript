@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Content from "./Content";
 import Strategy from "./Strategy";
 import Retake from "./Retake";
@@ -7,7 +7,6 @@ import Supplier from "./Supplier";
 import Faq from "./Faq";
 import Feedback from "./Feedback";
 import Footer from "../Footer/Footer";
-import Cookies from 'js-cookie'
 import Download from "./Download";
 
 type PropsType = {
