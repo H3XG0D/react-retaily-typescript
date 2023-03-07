@@ -1,7 +1,29 @@
 import React from 'react';
 import '../../Styles/Partners/Retake.scss';
 
-const Retake = () => {
+type PropsType = {
+    slider: boolean;
+}
+const Retake = (props: PropsType) => {
+
+    const data = [
+        {title: 'Система приема и обработки заявок на поставку товаров для торговых точек'},
+        {title: 'Личный кабинет поставщика на портале retaily.online'},
+        {title: 'Онлайн-заключение договоров поставок с контрагентами'},
+        {title: 'Кастомизация цены и категории товаров для отдельных контрагентов'},
+        {title: 'Возможность показать в формате сториз акции, новинки, другую полезную информацию'},
+        {title: 'Возможность размещения рекламных баннеров на главной странице'},
+    ]
+
+    const data2 = [
+        {title: 'Полный каталог продукции по ценам производителей'},
+        {title: 'Без ожидания ответа диспетчера'},
+        {title: 'Push-уведомления (с нами полки всегда заполнены)'},
+        {title: 'Сохранение истории заявок'},
+        {title: 'Онлайн мониторинг статуса вашей заявки (принят, отгружается и др.)'},
+        {title: 'Контроль закупок'},
+    ]
+
     return (
         <div className="main__retake_bg">
             <div className="wrapper">
@@ -11,67 +33,32 @@ const Retake = () => {
                     </div>
                     <div className="main__retake-content">
                         <div className="main__retake-content-items">
-                            <div className="main__retake-content-item">
-                                <div className="main__retake-content-item-circle">
-                                    <div className="main__retake-content-item-circle_circleIn"></div>
-                                </div>
-                                <div className="main__retake-content-item_text">
-                                    Система приема и обработки заявок на поставку товаров для торговых точек
-                                </div>
-                            </div>
-                            <div className="main__retake-content-item">
-                                <div className="main__retake-content-item-circle">
-                                    <div className="main__retake-content-item-circle_circleIn"></div>
-                                </div>
-                                <div className="main__retake-content-item_text">
-                                    Личный кабинет
-                                    поставщика на портале
-                                    retaily.online
-                                </div>
-                            </div>
-                            <div className="main__retake-content-item">
-                                <div className="main__retake-content-item-circle">
-                                    <div className="main__retake-content-item-circle_circleIn"></div>
-                                </div>
-                                <div className="main__retake-content-item_text">
-                                    Онлайн-заключение договоров поставок с контрагентами
-                                </div>
-                            </div>
-                            <div className="main__retake-content-item">
-                                <div className="main__retake-content-item-circle">
-                                    <div className="main__retake-content-item-circle_circleIn"></div>
-                                </div>
-                                <div className="main__retake-content-item_text">
-                                    Кастомизация цены и
-                                    категории товаров для
-                                    отдельных контрагентов
-                                </div>
-                            </div>
-                            <div className="main__retake-content-item">
-                                <div className="main__retake-content-item-circle">
-                                    <div className="main__retake-content-item-circle_circleIn"></div>
-                                </div>
-                                <div className="main__retake-content-item_text">
-                                    Возможность показать в
-                                    формате сториз акции,
-                                    новинки, другую
-                                    полезную информацию
-                                </div>
-                            </div>
-                            <div className="main__retake-content-item">
-                                <div className="main__retake-content-item-circle">
-                                    <div className="main__retake-content-item-circle_circleIn"></div>
-                                </div>
-                                <div className="main__retake-content-item_text">
-                                    Возможность
-                                    размещения рекламных
-                                    баннеров на главной
-                                    странице
-                                </div>
-                            </div>
+                            {props.slider ? data2.map((a:any) => {
+                                return (
+                                    <div className="main__retake-content-item">
+                                        <div className="main__retake-content-item-circle">
+                                            <div className="main__retake-content-item-circle_circleIn"></div>
+                                        </div>
+                                        <div className="main__retake-content-item_text">
+                                            {a.title}
+                                        </div>
+                                    </div>
+                                )
+                            }) : data.map((a:any) => {
+                                return (
+                                    <div className="main__retake-content-item">
+                                        <div className="main__retake-content-item-circle">
+                                            <div className="main__retake-content-item-circle_circleIn"></div>
+                                        </div>
+                                        <div className="main__retake-content-item_text">
+                                            {a.title}
+                                        </div>
+                                    </div>
+                                )
+                            })}
                         </div>
                         <div className="main__retake-content-image">
-                            <div className="main__retake-content-image_macbook"></div>
+                            {props.slider ? <div className="main__retake-content-image_macbook2"></div> : <div className="main__retake-content-image_macbook"></div>}
                             <div className="main__retake-content-image_iphone"></div>
                         </div>
                     </div>

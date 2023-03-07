@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Montserrat:wght@300;400&family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Montserrat:wght@300;400&family=Roboto:wght@300&family=Titillium+Web:wght@300;400;700&display=swap");
 $subtitle: #85cbfc;
 
 .main__footer {
   color: white;
   position: relative;
-  height: calc(100vh - 80px);
-  justify-content: center;
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  display: grid;
+  gap: 80px;
+  padding: 100px;
 
   &-bg {
     background-color: #0c97f9;
-  }
-
-  &-links {
-    padding: 100px;
   }
 
   &_logo {
@@ -22,6 +19,8 @@ $subtitle: #85cbfc;
     height: 40px;
     background: url("../../Images/footerLogo.png") no-repeat;
     background-size: cover;
+    position: relative;
+    top: -20px;
   }
 
   &-items {
@@ -59,11 +58,11 @@ $subtitle: #85cbfc;
   &-apps {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 20px;
+    align-items: center;
   }
 
   &-app {
-    display: flex;
     &-googlePlay {
       &_image {
         width: 60px;
@@ -98,13 +97,28 @@ $subtitle: #85cbfc;
 
     &-play {
       display: flex;
-      gap: 60px;
+      gap: 50px;
       align-items: center;
       font-size: 24px;
       letter-spacing: 1px;
       &_font {
         font-weight: 600;
       }
+    }
+  }
+
+  &-items_copyright {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    &-text {
+      font-size: 20px;
+      color: #7CBDEB;
+    }
+    &-line {
+      height: 1px;
+      background-color: #7CBDEB;
     }
   }
 }

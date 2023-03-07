@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Content from "./Content";
 import Strategy from "./Strategy";
 import Retake from "./Retake";
@@ -7,17 +7,24 @@ import Supplier from "./Supplier";
 import Faq from "./Faq";
 import Feedback from "./Feedback";
 import Footer from "../Footer/Footer";
+import Cookies from 'js-cookie'
+import Download from "./Download";
 
-const Partners = () => {
+type PropsType = {
+    slider: boolean
+}
+const Partners = (props: PropsType) => {
     return (
         <div>
-            <Content />
+            {<Content />}
             <Strategy />
-            <Retake />
-            <Analytics />
+            {<Retake slider={props.slider}/>}
+            <Analytics slider={props.slider}/>
             <Supplier />
-            <Faq />
-            <Feedback />
+            {/* Если слайдер активирован, то подключается новый компонент */}
+            {props.slider ? <Download /> : null}
+            <Faq slider={props.slider}/>
+            <Feedback slider={props.slider} />
             <Footer />
         </div>
     );

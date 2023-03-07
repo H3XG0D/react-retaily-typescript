@@ -60,16 +60,20 @@ const Footer = () => {
             </div>
             <div className="main__footer-app-applePlay_qrCode"></div>
           </div>
+
+          <div className="main__footer-copyright">
+            <div className="main__footer-items_copyright">
+              <div className="main__footer-items_copyright-text">
+                c 2022, ООО “Ретейли”, официальный сайт
+              </div>
+              <div className="main__footer-items_copyright-line"></div>
+              <div className="main__footer-items_copyright-text">
+                Дизайн выполнен в 3Limbs
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/*<div className="main__footer_copyright_left">*/}
-      {/*  с 2022, ООО "Ретейли", официальный сайт*/}
-      {/*</div>*/}
-      {/*<div className="main__footer_copyright_line"></div>*/}
-      {/*<div className="main__footer_copyright_right">*/}
-      {/*  Дизайн выполнил Сивцев Иван*/}
-      {/*</div>*/}
     </div>
   );
 };

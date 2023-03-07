@@ -8,7 +8,11 @@ $subtitle: rgba(0, 0, 0, 0.5);
   align-items: center;
   flex-direction: column;
   padding-top: 80px;
-  gap: 30px;
+  gap: 70px;
+
+  &-bg {
+    background-color: #FAFAFA;
+  }
 
   &_name {
     font-weight: 500;

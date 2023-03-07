@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 import "../../Styles/Header/Navbar.scss";
 import { Button } from "antd";
+import {BrowserRouter, Routes, Router, NavLink} from "react-router-dom";
 
-export default function Navbar() {
-  const [slider, setSlider] = useState<boolean>(false);
-
-  let switcher = () => {
-    setSlider(!slider);
-  };
-
+type PropsType= {
+  slider: boolean;
+  switcher: () => void;
+}
+export default function Navbar(props: PropsType) {
   return (
     <div className="wrapper">
       <header className="header">
         {/* ЛОГО Retaily */}
-        <div className="header-logo">
-          <a href="#"></a>
-        </div>
+        <NavLink to="/" className="header-link">
+          <div className="header-logo">
+          </div>
+        </NavLink>
         <div className="header-switcher">
           <div
             className={
               "header-switcher-item " +
-              (slider ? "" : "header-switcher-item__active")
+              (props.slider ? "" : "header-switcher-item__active")
             }
-            onClick={() => switcher()}
+            onClick={() => props.switcher()}
           >
             Поставщик
           </div>
           <div
             className={
               "header-switcher-item " +
-              (slider ? "header-switcher-item__active" : "")
+              (props.slider ? "header-switcher-item__active" : "")
             }
-            onClick={() => switcher()}
+            onClick={() => props.switcher()}
           >
             Торговая точка
           </div>
@@ -41,9 +41,9 @@ export default function Navbar() {
           <a href="/#" className="header-link__active">
             Стать партнером
           </a>
-          <a href="/#" className="header-link">
+          <NavLink to="/one" className="header-link">
             О нас
-          </a>
+          </NavLink>
           <a href="/#" className="header-link">
             Вакансии
           </a>

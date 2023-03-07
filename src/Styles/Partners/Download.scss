@@ -1,0 +1,109 @@
+.main__download {
+  display: grid;
+  font-family: "Jost", sans-serif;
+  height: calc(100vh - 80px);
+  position: relative;
+  justify-content: center;
+
+  &-items {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &-apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+  }
+
+  &-app {
+    display: flex;
+    justify-content: center;
+    &-googlePlay {
+      &_image {
+        position: relative;
+        width: 60px;
+        height: 68px;
+        background: url("../../Images/googlePlay.png") no-repeat;
+        background-size: cover;
+      }
+
+      &_qrCode {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        background: url("../../Images/qrCode.png") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &-applePlay {
+      &_image {
+        position: relative;
+        width: 60px;
+        height: 73px;
+        background: url("../../Images/appleLogo.png") no-repeat;
+        background-size: cover;
+      }
+
+      &_qrCode {
+        width: 170px;
+        height: 170px;
+        background: url("../../Images/qrCode.png") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &-play {
+      align-items: center;
+      display: flex;
+      gap: 20px;
+      font-size: 24px;
+      &_font {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-images {
+    position: relative;
+    height: 100%;
+    &_macbook {
+      position: absolute;
+      background: url("../../Images/IMAC.png") no-repeat;
+      background-size: cover;
+      width: auto;
+      height: auto;
+      max-width: 430px;
+      max-height: 320px;
+      top: 2vh;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    &_iphone {
+      position: absolute;
+      top: 17vh;
+      bottom: 0;
+      left: 15vw;
+      right: 0;
+
+      background: url("../../Images/iphoneMarket.png") no-repeat;
+      background-size: cover;
+
+      width: auto;
+      height: auto;
+      max-width: 90px;
+      max-height: 185px;
+    }
+  }
+}

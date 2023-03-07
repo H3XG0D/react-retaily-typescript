@@ -2,20 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  width: calc(100vw - 20px);
   height: calc(100vh - 80px);
-  background-color: #FAFAFA;
   justify-content: center;
+  padding: 0px 200px;
   align-items: center;
+
+  &-bg {
+    background-color: #FAFAFA;
+  }
 
   &_title {
     position: relative;
-    right: -500px;
     top: -50px;
-    display: flex;
-    font-size: 53px;
+    font-size: 55px;
     font-weight: 500;
-    width: 254px;
   }
 
   input {
@@ -26,17 +26,13 @@
     outline: none;
     border: none;
     border-bottom: 1px solid #ccc;
-    background-color: #FAFAFA;
   }
 
   &_input {
     display: flex;
     position: relative;
-    left: -250px;
-    top: -50px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
   &-checkbox {

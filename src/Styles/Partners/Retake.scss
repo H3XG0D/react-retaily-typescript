@@ -26,7 +26,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap: 20px;
     position: absolute;
     top: 0;
     right: 0;
@@ -37,7 +36,7 @@
     &-items {
       display: grid;
       justify-content: center;
-      gap: 10px;
+      gap: 15px;
     }
 
     &-item {
@@ -64,8 +63,8 @@
       }
 
       &_text {
-        font-size: 17px;
-        width: 400px;
+        font-size: 20px;
+        width: 450px;
       }
     }
 
@@ -77,8 +76,22 @@
 
 
       &_macbook {
+         position: absolute;
+         background: url("../../Images/macbook.png") no-repeat;
+         background-size: cover;
+         width: auto;
+         height: auto;
+         max-width: 415px;
+         max-height: 250px;
+         top: 31vh;
+         bottom: 0;
+         left: 0;
+         right: 0;
+       }
+
+      &_macbook2 {
         position: absolute;
-        background: url("../../Images/macbook.png") no-repeat;
+        background: url("../../Images/macbook2.png") no-repeat;
         background-size: cover;
         width: auto;
         height: auto;
