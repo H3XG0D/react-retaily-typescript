@@ -36,9 +36,11 @@ $info: #AFAFB4;
       flex-direction: column;
       gap: 20px;
     }
+
     &_title {
       font-size: 21px;
     }
+
     &_content {
       font-size: 18px;
       width: 1150px;
@@ -62,6 +64,7 @@ $info: #AFAFB4;
   &-image {
     display: grid;
     gap: 3px;
+
     &_title {
       font-size: 20px;
       font-weight: 800;
@@ -77,30 +80,35 @@ $info: #AFAFB4;
       width: 160px;
       height: 217px;
     }
+
     &__image2 {
       background: url("../../Images/About/Team/2.png") no-repeat;
       background-size: cover;
       width: 160px;
       height: 217px;
     }
+
     &__image3 {
       background: url("../../Images/About/Team/3.png") no-repeat;
       background-size: cover;
       width: 160px;
       height: 217px;
     }
+
     &__image4 {
       background: url("../../Images/About/Team/4.png") no-repeat;
       background-size: cover;
       width: 160px;
       height: 217px;
     }
+
     &__image5 {
       background: url("../../Images/About/Team/5.png") no-repeat;
       background-size: cover;
       width: 160px;
       height: 217px;
     }
+
     &__image6 {
       background: url("../../Images/About/Team/6.png") no-repeat;
       background-size: cover;

@@ -7,7 +7,7 @@ type PropsType = {
 
 const Faq = (props: PropsType) => {
   return (
-    <div className={props.slider ? "main__faq-bg" : ''}>
+    <div className={props.slider ? "main__faq-bg" : ""}>
       <div className="wrapper">
         <div className="main__faq">
           <div className="main__faq_name">F.A.Q</div>

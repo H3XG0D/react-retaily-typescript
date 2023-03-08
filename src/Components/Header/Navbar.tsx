@@ -54,7 +54,12 @@ export default function Navbar(props: PropsType) {
           {/* Отдельный компонент кнопки войти */}
           <Button
             type="primary"
-            style={{ borderRadius: "20px", width: "110px" }}
+            style={{
+              borderRadius: "20px",
+              width: "110px",
+              backgroundColor: "#0C97F9",
+              marginLeft: "15px",
+            }}
             className="header-btn"
           >
             Войти

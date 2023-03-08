@@ -1,0 +1,43 @@
+$info: #7D7D7D;
+$text: #0C97F9;
+
+.main__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px;
+
+  &-bg {
+    background-color: #FAFAFA;
+  }
+
+  &-title {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  &-mail {
+    &__title {
+      color: $info;
+    }
+
+    &__text {
+      color: $text;
+      font-size: 20px;
+    }
+  }
+
+  &-map {
+    margin-top: 15px;
+    background: url("../../Images/Contacts/maps.png") no-repeat;
+    background-size: cover;
+    width: 620px;
+    height: 350px;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./../../Styles/AboutUs/About.scss";
+import Footer from "../Footer/Footer";
 
 const AboutUs = () => {
   return (
@@ -82,7 +83,7 @@ const AboutUs = () => {
                     Егор Егорович
                   </div>
                   <div className="main__about-image_info">
-                    Главный архитектор <br /> программного <br/> обеспечения
+                    Главный архитектор <br /> программного <br /> обеспечения
                   </div>
                 </div>
 
@@ -114,6 +115,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

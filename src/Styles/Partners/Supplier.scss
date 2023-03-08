@@ -11,6 +11,7 @@ $transparent: rgba(12, 151, 249, 0.1);
   &-bg {
     background-color: #fafafa;
   }
+
   // Работа с названием
 
   &_title {
@@ -23,24 +24,28 @@ $transparent: rgba(12, 151, 249, 0.1);
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     gap: 110px;
+
     &-leftSide {
       display: flex;
       flex-direction: column;
       gap: 240px;
       margin-top: 100px;
     }
+
     &-rightSide {
       display: flex;
       flex-direction: column;
       gap: 240px;
       margin-top: 300px;
     }
+
     &-item {
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 15px;
+
       &_hide {
         position: relative;
         left: -15px;
@@ -51,15 +56,18 @@ $transparent: rgba(12, 151, 249, 0.1);
         user-select: none;
         line-height: 100px;
       }
+
       &_text {
         position: relative;
         font-size: 23px;
         width: 300px;
         text-align: center;
       }
+
       &_btn {
         position: relative;
       }
+
       &_text1 {
         position: relative;
         font-size: 23px;
@@ -67,12 +75,14 @@ $transparent: rgba(12, 151, 249, 0.1);
 
         top: -60px;
       }
+
       &_btn1 {
         position: relative;
         top: -60px;
         right: 40px;
       }
     }
+
     &-bar {
       position: relative;
 
@@ -88,6 +98,7 @@ $transparent: rgba(12, 151, 249, 0.1);
         z-index: 1;
         border: 1px solid #0c97f9;
       }
+
       &-items {
         display: flex;
         justify-content: space-between;
@@ -106,6 +117,7 @@ $transparent: rgba(12, 151, 249, 0.1);
         border-radius: 50%;
         border: 1px solid #0c97f9;
         background-color: white;
+
         &_circle {
           width: 10px;
           height: 10px;
@@ -115,6 +127,7 @@ $transparent: rgba(12, 151, 249, 0.1);
           display: flex;
           align-items: center;
           justify-content: center;
+
           &__active {
             position: absolute;
             top: -10px;

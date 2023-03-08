@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Styles/Footer/Footer.scss";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,18 +10,21 @@ const Footer = () => {
           <div className="main__footer-links">
             <div className="main__footer-items">
               <div className="main__footer-items_item">
-                <div className="main__footer_logo"></div>
-                <a href="src/Components/Partners#">О компании</a>
-                <a href="src/Components/Partners#">Документы</a>
-                <a href="src/Components/Partners#">Вакансии</a>
-                <a href="src/Components/Partners#">Контакты</a>
+                <NavLink to="/">
+                  <div className="main__footer_logo"></div>
+                </NavLink>
+
+                <NavLink to="/">Главная</NavLink>
+                <NavLink to="Documents">Документы</NavLink>
+                <NavLink to="Vacancies">Вакансии</NavLink>
+                <NavLink to="Contacts">Контакты</NavLink>
               </div>
               <div className="main__footer-items_item">
-                <a href="src/Components/Partners#">Главная</a>
-                <a href="src/Components/Partners#">Преимущества</a>
-                <a href="src/Components/Partners#">Как стать поставщиком?</a>
-                <a href="src/Components/Partners#">F.A.Q</a>
-                <a href="src/Components/Partners#">Обратная связь</a>
+                <NavLink to="/">Главная</NavLink>
+                <NavLink to="Features">Преимущества</NavLink>
+                <NavLink to="Supplier">Как стать поставщиком?</NavLink>
+                <NavLink to="FAQ">F.A.Q</NavLink>
+                <NavLink to="Feedback">Обратная связь</NavLink>
               </div>
               <div className="main__footer-items_item">
                 <div className="main__footer-items_item-title">Телефон</div>

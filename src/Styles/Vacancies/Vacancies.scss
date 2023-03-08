@@ -1,12 +1,55 @@
+$color2: #0C97F9;
+
 .main__vacancies {
-  &-title {
-    font-size: 35px;
-    font-weight: 500;
+  position: relative;
+  display: grid;
+  padding: 60px;
+  gap: 30px;
+
+  &-bg {
+    background-color: #FAFAFA;
   }
 
   &-content {
-    // TODO: GAP
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 50px;
   }
 
+  &-title {
+    font-size: 40px;
+    font-weight: 500;
+  }
 
+  &-subtitle {
+    font-size: 30px;
+
+    &_cost {
+      font-size: 30px;
+      color: $color2;
+      font-weight: 500;
+    }
+  }
+
+  &-offer {
+    margin-bottom: 15px;
+  }
+
+  &-rules {
+    padding-left: 15px;
+  }
+
+  &-things {
+    display: grid;
+    gap: 20px;
+  }
+
+  &-bold_text {
+    font-weight: 600;
+  }
+
+  &-feedback {
+    padding-left: 50px;
+  }
 }

@@ -28,6 +28,7 @@
   &-app {
     display: flex;
     justify-content: center;
+
     &-googlePlay {
       &_image {
         position: relative;
@@ -68,6 +69,7 @@
       display: flex;
       gap: 20px;
       font-size: 24px;
+
       &_font {
         font-weight: 600;
       }
@@ -77,6 +79,7 @@
   &-images {
     position: relative;
     height: 100%;
+
     &_macbook {
       position: absolute;
       background: url("../../Images/Partners/IMAC.png") no-repeat;
@@ -90,6 +93,7 @@
       left: 0;
       right: 0;
     }
+
     &_iphone {
       position: absolute;
       top: 17vh;

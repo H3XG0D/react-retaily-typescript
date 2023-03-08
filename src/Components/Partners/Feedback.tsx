@@ -41,7 +41,7 @@ const Feedback = (props: PropsType) => {
           changeData(e, field);
         }}
         style={{
-          backgroundColor: props.slider ? "#FFF" : "#FAFAFA"
+          backgroundColor: props.slider ? "#FFF" : "#FAFAFA",
         }}
       />
     );
