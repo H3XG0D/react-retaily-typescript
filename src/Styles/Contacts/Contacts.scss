@@ -5,15 +5,27 @@ $text: #0C97F9;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 50px;
+  height: 2000px;
 
   &-bg {
     background-color: #FAFAFA;
   }
 
   &-title {
-    font-size: 40px;
+    padding-top: 50px;
+    font-size: 35px;
     font-weight: 500;
+  }
+
+  &-side {
+    display: flex;
+    gap: 100px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   &-container {
@@ -34,7 +46,7 @@ $text: #0C97F9;
   }
 
   &-map {
-    margin-top: 15px;
+    margin-top: 10px;
     background: url("../../Images/Contacts/maps.png") no-repeat;
     background-size: cover;
     width: 620px;

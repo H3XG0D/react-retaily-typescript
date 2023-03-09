@@ -10,22 +10,25 @@ const Footer = () => {
           <div className="main__footer-links">
             <div className="main__footer-items">
               <div className="main__footer-items_item">
+
                 <NavLink to="/">
                   <div className="main__footer_logo"></div>
                 </NavLink>
 
                 <NavLink to="/">Главная</NavLink>
-                <NavLink to="Documents">Документы</NavLink>
-                <NavLink to="Vacancies">Вакансии</NavLink>
-                <NavLink to="Contacts">Контакты</NavLink>
+                <NavLink to="/Documents">Документы</NavLink>
+                <NavLink to="/Vacancies">Вакансии</NavLink>
+                <NavLink to="/Contacts">Контакты</NavLink>
               </div>
+
               <div className="main__footer-items_item">
                 <NavLink to="/">Главная</NavLink>
-                <NavLink to="Features">Преимущества</NavLink>
-                <NavLink to="Supplier">Как стать поставщиком?</NavLink>
-                <NavLink to="FAQ">F.A.Q</NavLink>
-                <NavLink to="Feedback">Обратная связь</NavLink>
+                <NavLink to="/Features">Преимущества</NavLink>
+                <NavLink to="/Supplier">Как стать поставщиком?</NavLink>
+                <NavLink to="/FAQ">F.A.Q</NavLink>
+                <NavLink to="/Feedback">Обратная связь</NavLink>
               </div>
+
               <div className="main__footer-items_item">
                 <div className="main__footer-items_item-title">Телефон</div>
                 <div className="main__footer-items_item-subtitle">

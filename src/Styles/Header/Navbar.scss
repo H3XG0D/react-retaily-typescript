@@ -72,4 +72,46 @@ $black: #000;
       cursor: pointer;
     }
   }
+
+  .ant-btn {
+    border-radius: 20px;
+    width: 110px;
+    background-color: #0C97F9;
+    margin-left: 15px;
+  }
+
+  &-burger__menu {
+    display: none;
+  }
+}
+
+/* Media SCSS */
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-links {
+      display: none;
+    }
+
+    &-burger {
+      width: 70px;
+      height: 23px;
+      background: url("../../Images/Partners/burger.png") no-repeat;
+      background-size: cover;
+      cursor: pointer;
+
+      &__menu {
+        background-color: black;
+        width: 300px;
+      }
+    }
+  }
+
+  .ant-btn {
+    display: none;
+  }
 }

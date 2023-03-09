@@ -3,12 +3,21 @@ $info: #AFAFB4;
 .main__about {
   position: relative;
   font-family: 'Jost', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 2000px;
 
   &-bg {
     background-color: #FAFAFA;
+  }
+
+  &-side {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
   }
 
   &-company {
@@ -20,7 +29,7 @@ $info: #AFAFB4;
 
   &-title {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 35px;
   }
 
   &-retailyImage {
@@ -43,13 +52,13 @@ $info: #AFAFB4;
 
     &_content {
       font-size: 18px;
-      width: 1150px;
+      width: 900px;
     }
   }
 
   &-team {
     display: flex;
-    padding: 50px;
+    padding-left: 50px;
     gap: 30px;
   }
 

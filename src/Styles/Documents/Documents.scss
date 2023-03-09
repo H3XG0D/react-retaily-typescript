@@ -1,0 +1,52 @@
+.main__documents {
+  display: flex;
+  height: 2000px;
+
+  &-bg {
+    background-color: #FAFAFA;
+  }
+
+  &-side {
+    display: flex;
+    gap: 100px;
+  }
+
+  &-title {
+    padding-top: 40px;
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  &-element {
+    position: absolute;
+
+    background: url("../../Images/Documents/Arrow.png") no-repeat;
+    background-size: cover;
+
+    width: 8px;
+    height: 13px;
+    right: 450px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &-item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-subtitle {
+    font-size: 20px;
+  }
+}

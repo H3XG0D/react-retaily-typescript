@@ -11,7 +11,7 @@ import Retake from "./Components/Partners/Retake";
 import Supplier from "./Components/Partners/Supplier";
 import Faq from "./Components/Partners/Faq";
 import Feedback from "./Components/Partners/Feedback";
-
+import Sidebar from "./Components/Sidebar/Sidebar";
 function App() {
   const [slider, setSlider] = useState<boolean>(false);
   let switcher = () => {
@@ -26,17 +26,20 @@ function App() {
         </React.Fragment>
       </div>
       <Routes>
+
         <Route path="AboutUs" element={<AboutUs />} />
         <Route path="Vacancies" element={<Vacancies />} />
         <Route path="Contacts" element={<Contacts />} />
         <Route path="Documents" element={<Documents />} />
         <Route path="Contacts" element={<Contacts />} />
+        <Route path="Sidebar" element={<Sidebar />} />
         <Route path="Features" element={<Retake slider />} />
         <Route path="Supplier" element={<Supplier />} />
         <Route path="FAQ" element={<Faq slider />} />
         <Route path="Feedback" element={<Feedback slider />} />
 
         <Route path="" element={<Partners slider={slider} />} />
+
       </Routes>
     </BrowserRouter>
   );

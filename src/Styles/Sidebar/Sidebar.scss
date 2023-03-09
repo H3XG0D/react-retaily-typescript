@@ -1,0 +1,25 @@
+.main__sidebar {
+  padding-top: 45px;
+  padding-left: 180px;
+  &-bg {
+    background-color: #FAFAFA;
+  }
+
+  &-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &-item {
+    font-size: 24px;
+    width: 150px;
+    color: black;
+    text-decoration: none;
+
+    &__active {
+      color: #0C97F9;
+    }
+
+  }
+}
