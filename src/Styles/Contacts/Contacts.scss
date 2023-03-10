@@ -52,4 +52,51 @@ $text: #0C97F9;
     width: 620px;
     height: 350px;
   }
+
+  &-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__contacts {
+    width: 768px;
+    height: 1300px;
+
+    &-side {
+      display: flex;
+      flex-direction: column;
+      gap: 110px;
+    }
+
+    &-title {
+      display: none;
+    }
+
+    &-rows {
+      display: grid;
+      gap: 50px;
+    }
+
+    &-mobile {
+      display: block;
+    }
+
+    &-container {
+      gap: 70px;
+      position: relative;
+      left: 13vw;
+    }
+
+    &-map {
+      position: relative;
+      left: 13vw;
+      width: 595px;
+      height: 335px;
+    }
+
+    &-content {
+      gap: 60px;
+    }
+  }
 }

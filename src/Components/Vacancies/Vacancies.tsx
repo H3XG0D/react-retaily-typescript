@@ -2,6 +2,7 @@ import React from "react";
 import "./../../Styles/Vacancies/Vacancies.scss";
 import Footer from "../Footer/Footer";
 import Sidebar from "../Sidebar/Sidebar";
+import { Button } from "antd";
 
 const Vacancies = () => {
   return (
@@ -84,6 +85,114 @@ const Vacancies = () => {
               </div>
               <div className="main__vacancies-feedback">
                 Резюме направлять на info@retaily.online
+              </div>
+            </div>
+
+            <div className="main__vacancies-container-mobile">
+              <div className="main__vacancies-content-mobile">
+                <div className="main__vacancies-offer">
+                  <div className="main__vacancies-subtitle">
+                    Менеджер по продажам
+                    <div className="main__vacancies-subtitle_cost">
+                      135 000 - 150 000 руб./месяц
+                    </div>
+                  </div>
+                </div>
+
+                <div className="main__vacancies-things">
+                  <div className="main__vacancies-text">
+                    КОМПАНИЯ «РЕТЕЙЛИ» стартовала на рынке IT услуг в начале
+                    <br />
+                    2021 года. За короткий период мы стали официальными <br />
+                    партнерами крупнейших товаропроизводителей...
+                  </div>
+
+                  <div>
+                    <div className="main__vacancies-box">
+                      <div className="main__vacancies-img"></div>
+                      <div className="main__vacancies-text">
+                        Удаленно/Якутск, Петра Алексеева 17
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="main__vacancies-box">
+                      <div className="main__vacancies-img2"></div>
+                      <div className="main__vacancies-text">
+                        Полная занятость/Свободный график
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <Button
+                      type="primary"
+                      style={{
+                        fontSize: "15px",
+                        height: "35px",
+                        width: "180px",
+                        borderRadius: "20px",
+                        backgroundColor: "#0C97F9",
+                      }}
+                    >
+                      ПОДРОБНЕЕ
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="main__vacancies-content-mobile">
+                <div className="main__vacancies-offer">
+                  <div className="main__vacancies-subtitle">
+                    Менеджер по продажам
+                    <div className="main__vacancies-subtitle_cost">
+                      135 000 - 150 000 руб./месяц
+                    </div>
+                  </div>
+                </div>
+
+                <div className="main__vacancies-things">
+                  <div className="main__vacancies-text">
+                    КОМПАНИЯ «РЕТЕЙЛИ» стартовала на рынке IT услуг в начале
+                    <br />
+                    2021 года. За короткий период мы стали официальными <br />
+                    партнерами крупнейших товаропроизводителей...
+                  </div>
+
+                  <div>
+                    <div className="main__vacancies-box">
+                      <div className="main__vacancies-img"></div>
+                      <div className="main__vacancies-text">
+                        Удаленно/Якутск, Петра Алексеева 17
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div className="main__vacancies-box">
+                      <div className="main__vacancies-img2"></div>
+                      <div className="main__vacancies-text">
+                        Полная занятость/Свободный график
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <Button
+                        type="primary"
+                        style={{
+                          fontSize: "15px",
+                          height: "35px",
+                          width: "180px",
+                          borderRadius: "20px",
+                          backgroundColor: "#0C97F9",
+                        }}
+                    >
+                      ПОДРОБНЕЕ
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

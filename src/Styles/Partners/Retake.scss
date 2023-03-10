@@ -124,7 +124,7 @@
 
 @media (max-width: 768px) {
   .main__retake {
-    height: 1024px;
+    height: 600px;
     width: 768px;
 
     &_hide_retake {
@@ -135,6 +135,11 @@
     &-content {
       &-items {
         position: relative;
+      }
+      &-item {
+        &_text {
+          font-size: 18px;
+        }
       }
 
       &-image {
@@ -180,8 +185,8 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 165px;
-        left: 65px;
+        top: 150px;
+        left: 70px;
       }
 
       &-image {

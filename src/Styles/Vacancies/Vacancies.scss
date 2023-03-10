@@ -28,6 +28,10 @@ $color2: #0C97F9;
     gap: 20px;
   }
 
+  &-container-mobile {
+    display: none;
+  }
+
   &-title {
     padding-top: 50px;
     font-size: 35px;
@@ -63,5 +67,62 @@ $color2: #0C97F9;
 
   &-feedback {
     padding-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__vacancies {
+    width: 768px;
+    height: 1200px;
+
+    &-side {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    &-title {
+      display: none;
+    }
+
+    &-container {
+      display: none;
+    }
+
+    &-container-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      align-items: center;
+    }
+
+    &-img {
+      width: 24px;
+      height: 27px;
+      background: url("../../Images/Vacancies/navigation.png") no-repeat;
+      background-size: cover;
+    }
+
+    &-img2 {
+      width: 25px;
+      height: 25px;
+      background: url("../../Images/Vacancies/clock.png") no-repeat;
+      background-size: cover;
+    }
+
+    &-box {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    &-subtitle {
+      font-size: 23px;
+
+      &_cost {
+        font-size: 23px;
+      }
+    }
   }
 }

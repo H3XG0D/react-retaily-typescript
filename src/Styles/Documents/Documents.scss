@@ -34,6 +34,10 @@
     gap: 30px;
   }
 
+  &-expand {
+    font-size: 15px;
+  }
+
   &-items {
     display: flex;
     flex-direction: column;
@@ -53,8 +57,30 @@
 
 @media (max-width: 768px) {
   .main__documents {
-    height: 1024px;
+    height: 1750px;
     width: 768px;
 
+    &-side {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-title {
+      display: none;
+    }
+
+    &-item {
+      position: relative;
+      left: 13vw;
+    }
+
+    &-element {
+      top: 5px;
+      right: 65px;
+    }
+
+    &-expand {
+      font-size: 14px;
+    }
   }
 }

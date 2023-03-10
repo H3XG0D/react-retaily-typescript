@@ -17,21 +17,34 @@ const Contacts = () => {
               <div className="main__contacts-title">Контакты</div>
 
               <div className="main__contacts-container">
-                <div className="main__contacts-address">
+                <div className="main__contacts-rows">
+                  <div className="main__contacts-address">
+                    <div className="main__contacts-mail">
+                      <div className="main__contacts-mail__title">Почта</div>
+
+                      <div className="main__contacts-mail__text">
+                        info@retaily.online
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="main__contacts-mail">
-                    <div className="main__contacts-mail__title">Почта</div>
+                    <div className="main__contacts-mail__title"> Почтовый адрес</div>
 
                     <div className="main__contacts-mail__text">
-                      info@retaily.online
+                      677000, г. Якутск, <br /> ул. Крупской 13, офис 505
                     </div>
                   </div>
                 </div>
 
-                <div className="main__contacts-mail">
-                  <div className="main__contacts-mail__title">Адрес</div>
+                <div className="main__contacts-mobile">
+                  <div className="main__contacts-mail__title">
+                    Фактический адрес
+                  </div>
 
                   <div className="main__contacts-mail__text">
-                    677000, г. Якутск, <br /> ул. Крупской 13, офис 505
+                    677000, г. Якутск, ул. Петра <br /> Алексеева, дом. 17, кв.
+                    74
                   </div>
                 </div>
               </div>
