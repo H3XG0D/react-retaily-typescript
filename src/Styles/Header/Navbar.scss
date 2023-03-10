@@ -111,7 +111,7 @@ $black: #000;
       cursor: pointer;
 
       &__menu {
-        position: absolute;
+        position: fixed;
         z-index: 4;
 
         left: 0;
@@ -124,14 +124,14 @@ $black: #000;
 
         background-color: #FFF;
         display: block;
-        animation: move 0.5s ease;
+        animation: move 0.4s ease;
 
         &-content {
           margin-top: 40px;
           display: flex;
           flex-direction: column;
           gap: 30px;
-          animation: open 0.4s ease;
+          animation: open 0.3s ease;
 
           &_logo {
             display: flex;
