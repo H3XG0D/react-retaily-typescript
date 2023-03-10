@@ -135,12 +135,16 @@ $subtitle: #85cbfc;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main__footer {
     display: flex;
     flex-direction: column;
     height: 1200px;
     width: 768px;
+
+    &-bg {
+      width: 768px;
+    }
 
     &-items {
       &-mobile {
