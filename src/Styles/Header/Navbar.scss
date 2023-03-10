@@ -124,14 +124,14 @@ $black: #000;
 
         background-color: #FFF;
         display: block;
-
-        transition: all 1s;
+        animation: move 0.2s ease;
 
         &-content {
           margin-top: 40px;
           display: flex;
           flex-direction: column;
           gap: 30px;
+          animation: open 0.2s ease;
 
           &_logo {
             display: flex;
@@ -155,6 +155,7 @@ $black: #000;
 
             &_text {
               font-size: 25px;
+
               &__bold {
                 font-size: 25px;
                 font-weight: 600;
@@ -167,6 +168,33 @@ $black: #000;
               right: 30px;
             }
           }
+        }
+      }
+
+      @keyframes move {
+        from {
+          width: 40%;
+        }
+        to {
+          width: 50%;
+        }
+      }
+
+      @keyframes close {
+        from {
+          width: 50%;
+        }
+        to {
+          width: 0%;
+        }
+      }
+
+      @keyframes open {
+        from {
+          transform: translateX(50px);
+        }
+        to {
+          transform: translateX(1px);
         }
       }
 

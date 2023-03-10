@@ -79,29 +79,49 @@ export default function Navbar(props: PropsType) {
                   <div className="header-burger__menu-content_logo"></div>
                   <div className="header-burger__menu-content-items">
                     <div className="header-burger__menu-content-items_text__bold">
-                      <NavLink to="/" className="header-burger__menu-content-items-links">
+                      <NavLink
+                        to="/"
+                        className="header-burger__menu-content-items-links"
+                      >
                         Стать партнёром
                       </NavLink>
                     </div>
                     <div className="header-burger__menu-content-items_text">
-                      <NavLink to="/AboutUs" className="header-burger__menu-content-items-links">
+                      <NavLink
+                        to="/AboutUs"
+                        className="header-burger__menu-content-items-links"
+                      >
                         О нас
                       </NavLink>
                     </div>
                     <div className="header-burger__menu-content-items_text">
-                      <NavLink to="/Vacancies" className="header-burger__menu-content-items-links">
+                      <NavLink
+                        to="/Vacancies"
+                        className="header-burger__menu-content-items-links"
+                      >
                         Вакансии
                       </NavLink>
                     </div>
                     <div className="header-burger__menu-content-items_text">
-                      <NavLink to="/Contacts" className="header-burger__menu-content-items-links">
+                      <NavLink
+                        to="/Contacts"
+                        className="header-burger__menu-content-items-links"
+                      >
                         Контакты
                       </NavLink>
                     </div>
                     <div className="header-burger__menu-content-items_btn">
-                    <Button type="primary" style={{display: "block", width: "150px", height: "40px", fontSize: "16px"}}>
-                      ВОЙТИ
-                    </Button>
+                      <Button
+                        type="primary"
+                        style={{
+                          display: "block",
+                          width: "150px",
+                          height: "40px",
+                          fontSize: "16px",
+                        }}
+                      >
+                        ВОЙТИ
+                      </Button>
                     </div>
                   </div>
                 </div>
