@@ -19,7 +19,7 @@ $text: #0C97F9;
 
   &-side {
     display: flex;
-    gap: 100px;
+    gap: 80px;
   }
 
   &-content {
@@ -43,6 +43,12 @@ $text: #0C97F9;
       color: $text;
       font-size: 20px;
     }
+  }
+
+  &-rows {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
   }
 
   &-map {
