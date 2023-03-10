@@ -54,65 +54,68 @@ const Feedback = (props: PropsType) => {
           <div className="main__feedback_title">
             ПИШИТЕ <br /> ПО ВСЕМ <br /> ВОПРОСАМ
           </div>
-          <div className="main__feedback_input">
-            <div className="main__feedback_input_name">
-              {renderInput("text", "ФИО", "fio")}
-            </div>
-            <div className="main__feedback_input_email">
-              {renderInput("email", "E-mail", "email")}
-            </div>
-            <div className="main__feedback_input_company">
-              {renderInput("text", "Название компании", "company")}
-            </div>
-            <div className="main__feedback_input_website">
-              {renderInput("text", "Ссылка на сайт компании", "link")}
-            </div>
-            <div className="main__feedback-checkbox">
-              <div
-                className="main__feedback-checkbox_check"
-                onClick={() => {
-                  setCheck(!check);
-                }}
-              >
-                {check ? (
-                  <div className="main__feedback-checkbox_check__active"></div>
-                ) : null}
+          <div className="main__feedback-all">
+            <div className="main__feedback_input">
+              <div className="main__feedback_input_name">
+                {renderInput("text", "ФИО", "fio")}
               </div>
-              <div className="main__feedback-checkbox_text">
-                Я согласен на обработку персональных данных
+              <div className="main__feedback_input_email">
+                {renderInput("email", "E-mail", "email")}
               </div>
-            </div>
-            <div className="main__feedback_btn">
-              <Button
-                type="primary"
-                disabled={
-                  !check ||
-                  data.fio === "" ||
-                  data.email === "" ||
-                  data.company === "" ||
-                  data.link === ""
-                }
-                onClick={() => {
-                  sendMessage();
-                }}
-                style={{
-                  fontSize: "16px",
-                  height: "40px",
-                  width: "450px",
-                  borderRadius: "20px",
-                  backgroundColor:
+              <div className="main__feedback_input_company">
+                {renderInput("text", "Название компании", "company")}
+              </div>
+              <div className="main__feedback_input_website">
+                {renderInput("text", "Ссылка на сайт компании", "link")}
+              </div>
+              <div className="main__feedback-checkbox">
+                <div
+                  className="main__feedback-checkbox_check"
+                  onClick={() => {
+                    setCheck(!check);
+                  }}
+                >
+                  {check ? (
+                    <div className="main__feedback-checkbox_check__active"></div>
+                  ) : null}
+                </div>
+                <div className="main__feedback-checkbox_text">
+                  Я согласен на обработку персональных данных
+                </div>
+              </div>
+              <div className="main__feedback_btn">
+                <Button
+                  className="main__feedback-ant"
+                  type="primary"
+                  disabled={
                     !check ||
                     data.fio === "" ||
                     data.email === "" ||
                     data.company === "" ||
                     data.link === ""
-                      ? "color: rgba(12, 151, 249, 0.1)"
-                      : "#0C97F9",
-                  top: "30px",
-                }}
-              >
-                ОТПРАВИТЬ
-              </Button>
+                  }
+                  onClick={() => {
+                    sendMessage();
+                  }}
+                  style={{
+                    fontSize: "16px",
+                    height: "40px",
+                    width: "450px",
+                    borderRadius: "20px",
+                    backgroundColor:
+                      !check ||
+                      data.fio === "" ||
+                      data.email === "" ||
+                      data.company === "" ||
+                      data.link === ""
+                        ? "color: rgba(12, 151, 249, 0.1)"
+                        : "#0C97F9",
+                    top: "30px",
+                  }}
+                >
+                  ОТПРАВИТЬ
+                </Button>
+              </div>
             </div>
           </div>
         </div>

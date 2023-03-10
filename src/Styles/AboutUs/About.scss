@@ -25,6 +25,11 @@ $info: #AFAFB4;
     flex-direction: column;
     gap: 30px;
     padding: 50px;
+
+    &_title {
+      font-weight: 500;
+      font-size: 35px;
+    }
   }
 
   &-title {
@@ -72,15 +77,31 @@ $info: #AFAFB4;
 
   &-image {
     display: grid;
-    gap: 3px;
+    &_info {
+      &-mobile {
+        display: none;
+      }
+
+      &-computer {
+        color: $info;
+      }
+
+      &-mobileReview {
+        display: none;
+      }
+    }
 
     &_title {
       font-size: 20px;
       font-weight: 800;
     }
 
-    &_info {
-      color: $info;
+    &_subtitle-mobile {
+      display: none;
+    }
+
+    &__all {
+      display: block;
     }
 
     &__image {
@@ -123,6 +144,128 @@ $info: #AFAFB4;
       background-size: cover;
       width: 160px;
       height: 217px;
+    }
+
+    &__mobile {
+      display: none;
+    }
+  }
+
+  &-copyright {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    color: #7D7D7D;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__about {
+    height: 2600px;
+    width: 768px;
+
+    &-company {
+      padding: 0;
+      margin-left: 100px;
+
+      &_title {
+        display: none;
+      }
+    }
+
+    &-title {
+      font-size: 38px;
+    }
+
+    &-side {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+    }
+
+    &-text {
+      &_title {
+        font-size: 24px;
+        width: 550px;
+      }
+
+      &_content {
+        font-size: 20px;
+        width: 580px;
+      }
+    }
+
+    &-team {
+      display: flex;
+      padding-top: 60px;
+      padding-left: 98px;
+      gap: 30px;
+    }
+
+    &-teamImage {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &-image {
+      gap: 4px;
+
+      &_info {
+        &-mobile {
+          display: block;
+          font-size: 20px;
+        }
+
+        &-mobileReview {
+          display: flex;
+          flex-direction: column;
+          padding-top: 60px;
+          padding-left: 80px;
+          gap: 8px;
+          &_text {
+            font-size: 21px;
+          }
+        }
+      }
+
+      &__all {
+        display: none;
+      }
+
+      &_info-computer {
+        display: none;
+      }
+
+      &_info-mobile {
+        color: #0C97F9;
+      }
+
+      &_subtitle-computer {
+        display: none;
+      }
+
+      &_subtitle-mobile {
+        display: block;
+        font-size: 19px;
+      }
+
+      &_title {
+        display: none;
+      }
+
+      &__mobile {
+        display: block;
+        background: url("../../Images/About/Team/7.png") no-repeat;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    &-copyright {
+      position: relative;
+      bottom: 70px;
     }
   }
 }

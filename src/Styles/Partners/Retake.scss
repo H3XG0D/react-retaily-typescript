@@ -121,3 +121,84 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .main__retake {
+    height: 1024px;
+    width: 768px;
+
+    &_hide_retake {
+      font-size: 160px;
+      margin-bottom: 88vh;
+    }
+
+    &-content {
+      &-items {
+        position: relative;
+      }
+
+      &-image {
+        &_macbook {
+          top: 150px;
+          bottom: 0;
+          left: -350px;
+          right: 0;
+        }
+
+        &_iphone {
+          top: 50px;
+          left: -50px;
+          right: 0;
+          bottom: 0;
+        }
+
+        &_macbook2 {
+          top: 150px;
+          bottom: 0;
+          left: -350px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 836px) {
+  .main__retake {
+    height: 1024px;
+    width: 768px;
+
+    &_hide_retake {
+      font-size: 160px;
+      margin-bottom: 108vh;
+    }
+
+    &-content {
+      &-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 165px;
+        left: 65px;
+      }
+
+      &-image {
+        &_macbook {
+          left: -300px;
+        }
+
+        &_macbook2 {
+          left: -300px;
+        }
+
+        &_iphone {
+          top: 75px;
+          width: 190px;
+          height: 384px;
+        }
+      }
+    }
+  }
+}

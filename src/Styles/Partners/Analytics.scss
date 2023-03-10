@@ -67,3 +67,19 @@ $color2: #0C97F9;
   }
 
 }
+
+@media (max-width: 768px) {
+  .main__analytics {
+    height: 1024px;
+    width: 768px;
+
+    &_title {
+      width: 500px;
+    }
+
+    &-items {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

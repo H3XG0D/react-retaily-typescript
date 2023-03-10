@@ -34,10 +34,63 @@
 
   &__second_content {
     z-index: 5;
-    font-size: 28px;
+    font-size: 29px;
     text-align: left;
     line-height: 40px;
     display: flex;
     padding: 0px 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    height: 1024px;
+    width: 768px;
+
+    &__content {
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      justify-content: center;
+    }
+
+    &__first_content {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &_title {
+        position: absolute;
+        font-family: "Jost", sans-serif;
+        font-size: 110px;
+        font-weight: 500;
+        color: rgba(12, 151, 249, 0.1);
+        letter-spacing: 1px;
+        user-select: none;
+        top: -90px;
+        z-index: 4;
+      }
+    }
+
+    &__second_content {
+      display: flex;
+      z-index: 5;
+      font-size: 30px;
+      line-height: 40px;
+      padding: 0px 100px;
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    &__second_content {
+      font-size: 27px;
+      padding: 0 50px;
+    }
   }
 }

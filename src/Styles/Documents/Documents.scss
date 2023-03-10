@@ -50,3 +50,11 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .main__documents {
+    height: 1024px;
+    width: 768px;
+
+  }
+}

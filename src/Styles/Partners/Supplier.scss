@@ -7,6 +7,7 @@ $transparent: rgba(12, 151, 249, 0.1);
   align-items: center;
   flex-direction: column;
   gap: 60px;
+  height: 1400px;
 
   &-bg {
     background-color: #fafafa;
@@ -62,10 +63,6 @@ $transparent: rgba(12, 151, 249, 0.1);
         font-size: 23px;
         width: 300px;
         text-align: center;
-      }
-
-      &_btn {
-        position: relative;
       }
 
       &_text1 {
@@ -140,6 +137,93 @@ $transparent: rgba(12, 151, 249, 0.1);
             border: 1px solid #0c97f9;
           }
         }
+      }
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__supplier {
+    height: 1800px;
+    width: 768px;
+
+    &_title {
+      font-size: 33px;
+    }
+
+    &-mobile {
+      position: relative;
+      right: 30px;
+    }
+
+    &-step {
+      display: flex;
+      text-align: center;
+      width: 768px;
+      &-leftSide {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 265px;
+        gap: 550px;
+      }
+
+      &-rightSide {
+        position: relative;
+        right: 250px;
+        display: flex;
+        flex-direction: column;
+        top: 200px;
+      }
+
+      &-mobile {
+        position: relative;
+        top: 25vh;
+      }
+
+      &-item {
+        &_btn1 {
+          position: relative;
+          left: 1px;
+        }
+      }
+
+      &-bar {
+        position: relative;
+        right: 260px;
+        top: 230px;
+      }
+
+      &-btn {
+        position: relative;
+        top: 430px;
+        left: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 836px) {
+  .main__supplier {
+    height: 1800px;
+    width: 768px;
+
+    &-step {
+      &-item {
+        &_btn2 {
+          right: 10px;
+        }
+      }
+      &-btn {
+        top: 340px;
+        left: 30px;
       }
     }
   }

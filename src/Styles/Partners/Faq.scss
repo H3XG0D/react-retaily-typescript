@@ -118,3 +118,62 @@ $subtitle: rgba(0, 0, 0, 0.5);
     }
   }
 }
+
+@media (max-width: 768px) {
+  .main__faq {
+    height: 1180px;
+    width: 768px;
+    display: flex;
+    background-color: #FFF;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+
+      &-bar {
+        position: relative;
+      }
+
+      &-mobileOne {
+        position: relative;
+        right: 38vw;
+        top: 55vh;
+
+      }
+
+      &-mobileTwo {
+        position: relative;
+      }
+
+      &-items {
+      }
+
+      &-item {
+        min-height: 150px;
+
+        &_text {
+          font-size: 20px;
+        }
+
+        &_subtext {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 836px) {
+  .main__faq {
+    &-info {
+      &-item {
+        &_text {
+          font-size: 26px;
+        }
+        &_subtext {
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}

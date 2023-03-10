@@ -1,6 +1,7 @@
 .main__sidebar {
   padding-top: 45px;
   padding-left: 180px;
+
   &-bg {
     background-color: #FAFAFA;
   }
@@ -20,6 +21,24 @@
     &__active {
       color: #0C97F9;
     }
-
   }
 }
+
+@media (max-width: 768px) {
+  .main__sidebar {
+    position: relative;
+    padding: 0;
+    top: 30px;
+    left: 13vw;
+
+    &-items {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-item {
+      font-size: 23px;
+    }
+  }
+}
+

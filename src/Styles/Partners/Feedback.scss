@@ -66,3 +66,50 @@
   }
 }
 
+@media (max-width: 768px) {
+  .main__feedback {
+    height: 1024px;
+    width: 768px;
+    background-color: #FAFAFA !important;
+
+    &_title {
+      display: flex;
+      top: -30vh;
+      left: 46vw;
+    }
+
+    &-checkbox {
+      padding-top: 35px;
+    }
+
+    input {
+      background-color: #FAFAFA !important;
+    }
+
+    &-all {
+      position: relative;
+      top: 7vh;
+      right: 150px;
+    }
+  }
+}
+
+@media (max-width: 836px) {
+  .main__feedback {
+    background-color: #FAFAFA !important;
+    height: 1024px;
+    width: 768px;
+
+    &-all {
+      top: 13vh;
+    }
+
+    &_title {
+      left: 33vw;
+    }
+
+    input {
+      background-color: #FAFAFA !important;
+    }
+  }
+}

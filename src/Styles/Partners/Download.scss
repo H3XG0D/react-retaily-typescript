@@ -111,3 +111,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .main__download {
+    display: none;
+  }
+}
+
+@media (max-width: 836px) {
+  .main__download {
+    display: none;
+  }
+}

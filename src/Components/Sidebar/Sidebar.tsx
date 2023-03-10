@@ -8,7 +8,6 @@ const Sidebar = () => {
 
     useEffect(() => {
         console.log(location)
-        debugger
     }, [location]);
 
 

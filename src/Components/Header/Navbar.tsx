@@ -9,7 +9,11 @@ type PropsType = {
 };
 
 export default function Navbar(props: PropsType) {
-  const [isNavExpanded, setIsNavExpanded] = useState<boolean>(false);
+  const [isMenuOpen, toggleMenu] = useState<boolean>(false);
+
+  function toggleMenuMode() {
+    toggleMenu(!isMenuOpen);
+  }
 
   return (
     <div className="wrapper">
@@ -58,39 +62,51 @@ export default function Navbar(props: PropsType) {
             Контакты
           </NavLink>
         </div>
+
+        {/* Отдельный компонент кнопки войти */}
         <div>
-          {/* Отдельный компонент кнопки войти */}
           <Button type="primary" className="header-btn">
             Войти
           </Button>
         </div>
 
-        <div
-          className="header-burger"
-          onClick={() => {
-            setIsNavExpanded(!isNavExpanded);
-          }}
-        >
-          <div className={isNavExpanded ? ".header" : "header-burger__menu"}>
-            <div className="header-burger__menu">
-              <div className="header-links">
-                <NavLink to="/" className="header-link__active">
-                  Стать партнёром
-                </NavLink>
-
-                <NavLink to="/AboutUs" className="header-link">
-                  О нас
-                </NavLink>
-
-                <NavLink to="/Vacancies" className="header-link">
-                  Вакансии
-                </NavLink>
-
-                <NavLink to="/Contacts" className="header-link">
-                  Контакты
-                </NavLink>
+        {/* Отдельное пространство для адаптива */}
+        <div className="header-burger" onClick={toggleMenuMode}>
+          <div className="header-burger">
+            {isMenuOpen ? (
+              <div className="header-burger__menu">
+                <div className="header-burger__menu-content">
+                  <div className="header-burger__menu-content_logo"></div>
+                  <div className="header-burger__menu-content-items">
+                    <div className="header-burger__menu-content-items_text__bold">
+                      <NavLink to="/" className="header-burger__menu-content-items-links">
+                        Стать партнёром
+                      </NavLink>
+                    </div>
+                    <div className="header-burger__menu-content-items_text">
+                      <NavLink to="/AboutUs" className="header-burger__menu-content-items-links">
+                        О нас
+                      </NavLink>
+                    </div>
+                    <div className="header-burger__menu-content-items_text">
+                      <NavLink to="/Vacancies" className="header-burger__menu-content-items-links">
+                        Вакансии
+                      </NavLink>
+                    </div>
+                    <div className="header-burger__menu-content-items_text">
+                      <NavLink to="/Contacts" className="header-burger__menu-content-items-links">
+                        Контакты
+                      </NavLink>
+                    </div>
+                    <div className="header-burger__menu-content-items_btn">
+                    <Button type="primary" style={{display: "block", width: "150px", height: "40px", fontSize: "16px"}}>
+                      ВОЙТИ
+                    </Button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+            ) : null}
           </div>
         </div>
       </header>

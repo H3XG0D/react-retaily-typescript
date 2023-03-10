@@ -59,3 +59,42 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    height: 1024px;
+    width: 768px;
+
+    &-bg {
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity: 0.9;
+    }
+
+    &__wall {
+      background: url("../../Images/Partners/Mobile/mobile.png") no-repeat;
+
+      width: 768px;
+      height: 1024px;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      position: absolute;
+    }
+
+    &-content {
+    }
+  }
+}
