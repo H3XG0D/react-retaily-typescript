@@ -98,3 +98,43 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .main {
+    width: 375px;
+    height: 667px;
+
+    &-bg {
+      width: 375px;
+      height: 667px;
+    }
+
+    &__wall {
+      background: url("../../Images/Partners/Mobile/backgroundFixed.jpg") no-repeat;
+      width: 375px;
+      height: 667px;
+    }
+
+    &-content {
+      &__title {
+        position: relative;
+        bottom: 12vh;
+        width: 350px;
+        font-weight: 500;
+        font-size: 23px;
+      }
+
+      &__subtitle {
+        position: relative;
+        left: 5vw;
+        bottom: 10vh;
+        width: 300px;
+      }
+
+      &__btn {
+        position: relative;
+        bottom: 20vh;
+      }
+    }
+  }
+}

@@ -208,3 +208,23 @@ $black: #000;
     }
   }
 }
+
+@media (max-width: 375px) {
+  .header {
+    position: relative;
+    width: 506px;
+    right: 70px;
+    gap: 15px;
+
+    &-logo {
+      width: 36px;
+      height: 24px;
+      background: url("../../Images/Partners/Mobile/Vector.png") no-repeat;
+      background-size: cover;
+    }
+
+    &-burger {
+      width: 35px;
+    }
+  }
+}

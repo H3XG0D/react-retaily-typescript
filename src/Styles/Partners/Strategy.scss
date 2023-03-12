@@ -93,3 +93,22 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .main {
+    width: 375px;
+    &__first_content {
+      &_title {
+        position: relative;
+        bottom: 130vh;
+      }
+    }
+    &__second_content {
+      position: relative;
+      font-size: 20px;
+      padding: 0 10px;
+      line-height: 30px;
+      bottom: 80vh;
+    }
+  }
+}
