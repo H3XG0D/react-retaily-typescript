@@ -1,7 +1,7 @@
 .main__documents {
   display: flex;
-  height: 2000px;
-
+  min-height: 2000px;
+  margin-bottom: 200px;
   &-bg {
     background-color: #FAFAFA;
   }
@@ -57,7 +57,7 @@
 
 @media (max-width: 768px) {
   .main__documents {
-    height: 1750px;
+    min-height: 1750px;
     width: 768px;
 
     &-side {

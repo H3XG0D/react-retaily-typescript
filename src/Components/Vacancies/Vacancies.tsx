@@ -3,6 +3,7 @@ import "./../../Styles/Vacancies/Vacancies.scss";
 import Footer from "../Footer/Footer";
 import Sidebar from "../Sidebar/Sidebar";
 import { Button } from "antd";
+import {NavLink} from "react-router-dom";
 
 const Vacancies = () => {
   return (
@@ -136,7 +137,7 @@ const Vacancies = () => {
                         backgroundColor: "#0C97F9",
                       }}
                     >
-                      ПОДРОБНЕЕ
+                      <NavLink to="Vacancies/*">ПОДРОБНЕЕ</NavLink>
                     </Button>
                   </div>
                 </div>
@@ -189,7 +190,7 @@ const Vacancies = () => {
                           backgroundColor: "#0C97F9",
                         }}
                     >
-                      ПОДРОБНЕЕ
+                      <NavLink to="Vacancies/*">ПОДРОБНЕЕ</NavLink>
                     </Button>
                   </div>
                 </div>

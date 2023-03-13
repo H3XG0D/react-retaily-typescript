@@ -12,6 +12,7 @@ import Supplier from "./Components/Partners/Supplier";
 import Faq from "./Components/Partners/Faq";
 import Feedback from "./Components/Partners/Feedback";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import More from "./Components/Vacancies/More";
 function App() {
   const [slider, setSlider] = useState<boolean>(false);
   let switcher = () => {
@@ -29,6 +30,7 @@ function App() {
 
         <Route path="AboutUs" element={<AboutUs />} />
         <Route path="Vacancies" element={<Vacancies />} />
+        <Route path="Vacancies/*" element={<More />} />
         <Route path="Contacts" element={<Contacts />} />
         <Route path="Documents" element={<Documents />} />
         <Route path="Contacts" element={<Contacts />} />

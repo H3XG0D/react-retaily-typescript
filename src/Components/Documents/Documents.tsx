@@ -1,52 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./../../Styles/Documents/Documents.scss";
 import Sidebar from "../Sidebar/Sidebar";
 import Footer from "../Footer/Footer";
 
 const Documents = () => {
-  const [data, setData] = useState<any>([
-    { name: "Правила работы", id: 0, expanded: false },
-    { name: "Официальное уведомление", id: 1, expanded: false },
+  const [data] = useState<any>([
+    { name: "Правила работы", id: 0 },
+    { name: "Официальное уведомление", id: 1 },
     {
       name: "Политика в отношении обработки персональных данных",
       id: 2,
-      expanded: false,
     },
   ]);
 
-  function compareNumeric(a: any, b: any) {
-    if (a.id > b.id) return 1;
-    if (a.id === b.id) return 0;
-    if (a.id < b.id) return -1;
-  }
+  const [expanded, setExpanded] = useState<any>([])
 
   let click = (id: number) => {
-    let newData = data;
+    let newExpanded = [...expanded]
 
-    let row = newData.find((a: any) => a.id === id);
-
-    if (row.expanded === true) {
-      row.expanded = false;
-    } else {
-      row.expanded = true;
+    if (newExpanded.some((f: any) => f === id)) {
+      newExpanded = newExpanded.filter((f: any) => f !== id)
+    }
+    else {
+      newExpanded.push(id)
     }
 
-    let filterData = newData.filter((a: any) => a.id !== id);
-
-    filterData.push(row);
-
-    setData(filterData.sort(compareNumeric));
+    setExpanded(newExpanded);
   };
 
   let renderItems = () => {
     let jsx: any = [];
+    // eslint-disable-next-line array-callback-return
     data.map((a: any) => {
       jsx.push(
         <div className="main__documents-item " onClick={() => click(a.id)}>
           <div className="main__documents-subtitle">
             <div className="main__documents-element"></div>
             {a.name}
-            {a.expanded === true ? (
+            {expanded.some((f: any) => f === a.id) ? (
               <div className="main__documents-expand">
                 Правила сервиса «Ретейли» (редакция от 05 апреля 2022 г.) <br />
                 <br />
